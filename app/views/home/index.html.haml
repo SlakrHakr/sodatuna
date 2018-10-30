@@ -1,7 +1,7 @@
-#before{ onclick: 'doStuff();', ontouchstart: 'doStuff();' }
+#before{ onclick: 'doStuff();', ontouchend: 'doStuff();' }
   = image_tag('before.png')
 
 #after.hidden
   = image_tag('after.png')
   %br
-  %button.btn{ onclick: 'resetStuff();', ontouchstart: 'resetStuff();' } Try Again
+  %button.btn{ onclick: 'resetStuff();', ontouchend: 'resetStuff();' } Try Again
