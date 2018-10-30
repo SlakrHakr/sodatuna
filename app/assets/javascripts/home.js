@@ -1,7 +1,7 @@
 function doStuff() {
   $("#before").effect("shake", {times: 10}, 1000, function() {
     var num = Math.floor((Math.random() * 100) + 1)
-    if(num < 75 && (num % 2) == 0) {
+    if(num < 85 && (num % 2) == 0) {
       $('#after').removeClass('hidden');
       $('#before').addClass('hidden');
       $('body').addClass('fail');
