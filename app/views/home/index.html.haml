@@ -1,0 +1,7 @@
+#before{ onclick: 'doStuff();', ontouchstart: 'doStuff();' }
+  = image_tag('before.png')
+
+#after.hidden{ onclick: 'resetStuff();', ontouchstart: 'resetStuff();' }
+  = image_tag('after.png')
+  %br
+  %button.btn Try Again

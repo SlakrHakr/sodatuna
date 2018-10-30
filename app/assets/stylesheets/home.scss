@@ -1,0 +1,34 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+#before {
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.btn {
+  padding: 5px 10px;
+  background-color: white;
+  font-size: 20px;
+  margin: 5px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body.fail {
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(121,9,9,1) 100%, rgba(0,0,0,1) 100%);
+}
