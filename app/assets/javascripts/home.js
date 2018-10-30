@@ -1,7 +1,7 @@
 function doStuff() {
   $("#before").effect("shake", {times: 10}, 1000, function() {
-    var num = Math.floor((Math.random() * 100) + 1)
-    if(num < 85 && (num % 2) == 0) {
+    var prob = 0.2; // prob = percent probability / 100; e.g. 30% -> 0.3
+    if(Math.random() < prob) {
       $('#after').removeClass('hidden');
       $('#before').addClass('hidden');
       $('body').addClass('fail');
