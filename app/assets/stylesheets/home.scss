@@ -3,9 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
   overflow: hidden;
   font-family: 'Roboto', sans-serif;
@@ -18,19 +15,33 @@ body {
 #before {
   cursor: pointer;
   margin-bottom: 40px;
+  position: absolute;
+  width: 50%;
+  text-align: center;
+  left: 50%;
+  top: 160px;
+  margin-left: -22%;
+}
+
+#after {
+  position: absolute;
+  width: 50%;
+  text-align: center;
+  left: 50%;
+  top: 160px;
+  margin-left: -22%;
 }
 
 .btn {
-  padding: 5px 10px;
-  background-color: white;
-  font-size: 20px;
-  margin: 5px 25px;
+  padding: 25px 100%;
+  background-color: transparent;
+  font-size: 40px;
+  margin: 20px -120%;
   border-radius: 5px;
   cursor: pointer;
-  color: #3a3a3a;
-  -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+  font-weight: bold;
+  border: 5px solid white;
+  color: white;
 }
 
 body.fail {
